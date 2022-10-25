@@ -15,7 +15,7 @@ chrome_options.add_argument("--no-sandbox")
 
 
 ##driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-driver = webdriver.Chrome(service=Service('./chromedriver'), options=chrome_options)
+driver = webdriver.Chrome(service=Service('./chromedriver.exe'), options=chrome_options)
 driver.get("http://www.google.com/")
 print(driver.page_source)
         
