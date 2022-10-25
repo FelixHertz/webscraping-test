@@ -27,7 +27,7 @@ def add_data_other(wort, gebrauch):
 
 words = ['a']
 
-with open('deutsch.txt') as fp:
+with open('deutsch.txt', 'rb') as fp:
     contents = fp.read().splitlines()
     for i in contents:
         words.append(i)
