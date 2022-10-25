@@ -10,12 +10,12 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument ("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
-chrome_options.set_capability("browserVersion", "106.0.5249.61")
-chrome_options.set_capability("platformName", "linux")
+##chrome_options.set_capability("browserVersion", "106.0.5249.61")
+##chrome_options.set_capability("platformName", "linux")
 
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-##driver = webdriver.Chrome(service=Service('./chromedriver'), options=chrome_options)
+##driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+driver = webdriver.Chrome(service=Service('./chromedriver'), options=chrome_options)
 driver.get("http://www.google.com/")
 print(driver.page_source)
         
