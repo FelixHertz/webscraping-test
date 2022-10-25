@@ -1,3 +1,4 @@
 selenium
 chromedriver-autoinstaller
 webdriver-manager
+packaging
