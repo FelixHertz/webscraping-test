@@ -1,4 +1,4 @@
-selenium
-chromedriver-autoinstaller
-webdriver-manager
 packaging
+requests
+beautifulsoup4
+mysql.connector
