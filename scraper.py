@@ -27,7 +27,7 @@ def add_data_other(wort, gebrauch):
 
 words = ['a']
 
-with open('deutsch.txt', 'rb') as fp:
+with open('deutsch.txt', encoding="utf8") as fp:
     contents = fp.read().splitlines()
     for i in contents:
         words.append(i)
@@ -40,7 +40,7 @@ def scrape():
         try:
             url = f"https://www.duden.de/rechtschreibung/{entry}"
 
-            print(entry)
+            print(url)
 
             result = requests.get(url, headers=header)
             doc = BeautifulSoup(result.text, "html.parser")
